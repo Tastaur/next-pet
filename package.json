@@ -6,14 +6,34 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:eslint": "eslint . --ext .ts,.tsx,.js --cache",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js --cache --fix",
+    "style:lint": "npx stylelint \"**/*.css\" --cache",
+    "style:lint:fix": "npx stylelint \"**/*.css\" --fix --cache",
+    "ts": "tsc"
   },
-  "dependencies": {
+  "devDependencies": {
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
+    "@typescript-eslint/eslint-plugin": "5.43.0",
+    "@typescript-eslint/parser": "5.43.0",
     "eslint": "8.28.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "17.0.0",
     "eslint-config-next": "13.0.5",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-react": "7.31.10",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "stylelint": "14.15.0",
+    "stylelint-config-prettier": "9.0.4",
+    "stylelint-config-standard": "29.0.0",
+    "stylelint-order": "5.0.0"
+  },
+  "dependencies": {
     "next": "13.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
